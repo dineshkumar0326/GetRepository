@@ -12,7 +12,7 @@
          homeMashup=""
          identifier=""
          inheritedValueStream=""
-         name="Configuration"
+         name="PalisSoftwareConfiguration"
          projectName="PrintingMachine"
          published="false"
          tags=""
@@ -26,9 +26,138 @@
                 <Delete></Delete>
                 <Metadata></Metadata>
             </DesignTimePermissions>
-            <RunTimePermissions></RunTimePermissions>
+            <RunTimePermissions>
+                <Permissions
+                 resourceName="ConfigChanged">
+                    <PropertyRead></PropertyRead>
+                    <PropertyWrite></PropertyWrite>
+                    <ServiceInvoke></ServiceInvoke>
+                    <EventInvoke>
+                        <Principal
+                         isPermitted="true"
+                         name="Balaji"
+                         type="User"></Principal>
+                    </EventInvoke>
+                    <EventSubscribe>
+                        <Principal
+                         isPermitted="true"
+                         name="Balaji"
+                         type="User"></Principal>
+                    </EventSubscribe>
+                </Permissions>
+                <Permissions
+                 resourceName="*">
+                    <PropertyRead>
+                        <Principal
+                         isPermitted="true"
+                         name="Administrators"
+                         type="Group"></Principal>
+                        <Principal
+                         isPermitted="true"
+                         name="Balaji"
+                         type="User"></Principal>
+                        <Principal
+                         isPermitted="true"
+                         name="Developer"
+                         type="User"></Principal>
+                        <Principal
+                         isPermitted="true"
+                         name="TestUser"
+                         type="User"></Principal>
+                    </PropertyRead>
+                    <PropertyWrite>
+                        <Principal
+                         isPermitted="true"
+                         name="Administrators"
+                         type="Group"></Principal>
+                        <Principal
+                         isPermitted="true"
+                         name="Balaji"
+                         type="User"></Principal>
+                        <Principal
+                         isPermitted="true"
+                         name="Developer"
+                         type="User"></Principal>
+                        <Principal
+                         isPermitted="true"
+                         name="TestUser"
+                         type="User"></Principal>
+                    </PropertyWrite>
+                    <ServiceInvoke>
+                        <Principal
+                         isPermitted="true"
+                         name="Administrators"
+                         type="Group"></Principal>
+                        <Principal
+                         isPermitted="true"
+                         name="Balaji"
+                         type="User"></Principal>
+                        <Principal
+                         isPermitted="true"
+                         name="Developer"
+                         type="User"></Principal>
+                        <Principal
+                         isPermitted="true"
+                         name="TestUser"
+                         type="User"></Principal>
+                    </ServiceInvoke>
+                    <EventInvoke>
+                        <Principal
+                         isPermitted="true"
+                         name="Administrators"
+                         type="Group"></Principal>
+                        <Principal
+                         isPermitted="true"
+                         name="Balaji"
+                         type="User"></Principal>
+                        <Principal
+                         isPermitted="true"
+                         name="Developer"
+                         type="User"></Principal>
+                        <Principal
+                         isPermitted="true"
+                         name="TestUser"
+                         type="User"></Principal>
+                    </EventInvoke>
+                    <EventSubscribe>
+                        <Principal
+                         isPermitted="true"
+                         name="Administrators"
+                         type="Group"></Principal>
+                        <Principal
+                         isPermitted="true"
+                         name="Balaji"
+                         type="User"></Principal>
+                        <Principal
+                         isPermitted="true"
+                         name="Developer"
+                         type="User"></Principal>
+                        <Principal
+                         isPermitted="true"
+                         name="TestUser"
+                         type="User"></Principal>
+                    </EventSubscribe>
+                </Permissions>
+            </RunTimePermissions>
             <VisibilityPermissions>
-                <Visibility></Visibility>
+                <Visibility>
+                    <Principal
+                     isPermitted="true"
+                     name="Composer"
+                     type="Organization"></Principal>
+                    <Principal
+                     isPermitted="true"
+                     name="Development"
+                     type="Organization"></Principal>
+                    <Principal
+                     isPermitted="true"
+                     name="PrintingMachineOrg"
+                     type="Organization"></Principal>
+                    <Principal
+                     isPermitted="true"
+                     name="PTC.Asset.Admin"
+                     type="Organization"></Principal>
+                </Visibility>
             </VisibilityPermissions>
             <ConfigurationTableDefinitions></ConfigurationTableDefinitions>
             <ConfigurationTables>
@@ -147,7 +276,7 @@
             <ThingShape>
                 <PropertyDefinitions>
                     <PropertyDefinition
-                     aspect.cacheTime="-1.0"
+                     aspect.cacheTime="0.0"
                      aspect.dataChangeType="VALUE"
                      aspect.isLogged="true"
                      aspect.isPersistent="true"
@@ -156,170 +285,32 @@
                      category=""
                      description=""
                      isLocalOnly="false"
-                     name="AppConfig"
+                     name="Configuration"
                      ordinal="2"></PropertyDefinition>
                 </PropertyDefinitions>
-                <ServiceDefinitions>
-                    <ServiceDefinition
-                     aspect.isAsync="false"
-                     category=""
-                     description="test push "
-                     isAllowOverride="false"
-                     isLocalOnly="false"
-                     isOpen="false"
-                     isPrivate="false"
-                     name="TeshPush">
-                        <ResultType
-                         baseType="STRING"
-                         description=""
-                         name="result"
-                         ordinal="0"></ResultType>
-                        <ParameterDefinitions>
-                            <FieldDefinition
-                             baseType="STRING"
-                             description=""
-                             name="MessageInfo"
-                             ordinal="1"></FieldDefinition>
-                        </ParameterDefinitions>
-                    </ServiceDefinition>
-                    <ServiceDefinition
-                     aspect.isAsync="false"
-                     category=""
-                     description="test"
-                     isAllowOverride="false"
-                     isLocalOnly="false"
-                     isOpen="false"
-                     isPrivate="false"
-                     name="Test">
-                        <ResultType
-                         baseType="NUMBER"
-                         description=""
-                         name="result"
-                         ordinal="0"></ResultType>
-                        <ParameterDefinitions>
-                            <FieldDefinition
-                             baseType="NUMBER"
-                             description=""
-                             name="Input1"
-                             ordinal="1"></FieldDefinition>
-                            <FieldDefinition
-                             baseType="NUMBER"
-                             description=""
-                             name="Input2"
-                             ordinal="2"></FieldDefinition>
-                        </ParameterDefinitions>
-                    </ServiceDefinition>
-                </ServiceDefinitions>
+                <ServiceDefinitions></ServiceDefinitions>
                 <EventDefinitions>
                     <EventDefinition
                      category=""
                      dataShape="TestShape"
                      description=""
-                     name="TestEvent"></EventDefinition>
+                     name="ConfigChanged"></EventDefinition>
                 </EventDefinitions>
                 <ServiceMappings></ServiceMappings>
-                <ServiceImplementations>
-                    <ServiceImplementation
-                     description=""
-                     handlerName="Script"
-                     name="TeshPush">
-                        <ConfigurationTables>
-                            <ConfigurationTable
-                             dataShapeName=""
-                             description=""
-                             isMultiRow="false"
-                             name="Script"
-                             ordinal="0">
-                                <DataShape>
-                                    <FieldDefinitions>
-                                        <FieldDefinition
-                                         baseType="STRING"
-                                         description="code"
-                                         name="code"
-                                         ordinal="0"></FieldDefinition>
-                                    </FieldDefinitions>
-                                </DataShape>
-                                <Rows>
-                                    <Row>
-                                        <code>
-                                        <![CDATA[
-                                        var entities = Things["GIT.Utility.Thing"].GetProjectEntities({
-                                        	project: "PrintingMachine" /* STRING */,
-                                        	entityName: "Configuration" /* STRING */,
-                                        	entityType: "Thing" /* STRING */
-                                        });
-                                        
-                                        var ex = Things["GitBackup"].ExportProjectEntities({
-                                        	ProjectName: "PrintingMachine" /* STRING */,
-                                        	includeDependents: false /* BOOLEAN */,
-                                        	EntitiesToExport: entities /* INFOTABLE */
-                                        });
-                                        
-                                        // Result: STRING
-                                        let Result = Things["GitBackup"].Push({
-                                        	Message: MessageInfo /* STRING */
-                                        });
-                                        ]]>
-                                        </code>
-                                    </Row>
-                                </Rows>
-                            </ConfigurationTable>
-                        </ConfigurationTables>
-                    </ServiceImplementation>
-                    <ServiceImplementation
-                     description=""
-                     handlerName="Script"
-                     name="Test">
-                        <ConfigurationTables>
-                            <ConfigurationTable
-                             dataShapeName=""
-                             description=""
-                             isMultiRow="false"
-                             name="Script"
-                             ordinal="0">
-                                <DataShape>
-                                    <FieldDefinitions>
-                                        <FieldDefinition
-                                         baseType="STRING"
-                                         description="code"
-                                         name="code"
-                                         ordinal="0"></FieldDefinition>
-                                    </FieldDefinitions>
-                                </DataShape>
-                                <Rows>
-                                    <Row>
-                                        <code>
-                                        <![CDATA[
-                                        // result: NUMBER
-                                        let result = Things["SteamSensor1"].AddNumbers({
-                                        	a: Input1/* NUMBER */,
-                                        	b: Input2/* NUMBER */
-                                        });
-                                        
-                                        me.TestEvent({
-                                        	message: "Test service" /* STRING */
-                                        });
-                                        ]]>
-                                        </code>
-                                    </Row>
-                                </Rows>
-                            </ConfigurationTable>
-                        </ConfigurationTables>
-                    </ServiceImplementation>
-                </ServiceImplementations>
+                <ServiceImplementations></ServiceImplementations>
                 <Subscriptions>
                     <Subscription
                      description=""
-                     enabled="true"
-                     eventName="TestEvent"
-                     name="TestSubscription"
+                     enabled="false"
+                     eventName="ConfigChanged"
+                     name="ConfigurationHandler"
                      source=""
                      sourceProperty=""
                      sourceType="Thing">
                         <ServiceImplementation
                          description=""
                          handlerName="Script"
-                         name="TestSubscription">
+                         name="ConfigurationHandler">
                             <ConfigurationTables>
                                 <ConfigurationTable
                                  dataShapeName=""
@@ -340,7 +331,7 @@
                                         <Row>
                                             <code>
                                             <![CDATA[
-                                            logger.warn(eventData.message);
+                                            logger.info("Welcome");
                                             ]]>
                                             </code>
                                         </Row>
@@ -358,49 +349,49 @@
                  aspect.startType="useDefaultValue"
                  aspect.tagAddress=""
                  foldType="NONE"
-                 name="AppConfig"
+                 name="Configuration"
                  pushThreshold="0.0"
                  pushType="VALUE"
-                 sourceName="AppConfig"
+                 sourceName=""
                  timeout="0"></RemotePropertyBinding>
             </RemotePropertyBindings>
             <RemoteServiceBindings></RemoteServiceBindings>
             <RemoteEventBindings>
                 <RemoteEventBinding
-                 name="TestEvent"
+                 name="ConfigChanged"
                  sourceName=""></RemoteEventBinding>
             </RemoteEventBindings>
             <AlertConfigurations>
                 <AlertDefinitions
-                 name="AppConfig"></AlertDefinitions>
+                 name="Configuration"></AlertDefinitions>
             </AlertConfigurations>
             <ImplementedShapes></ImplementedShapes>
             <ThingProperties>
                 <reportingLastEvaluation>
-                    <Value>2021-06-30T07:06:36.339Z</Value>
-                    <Timestamp>2021-06-30T07:06:36.339Z</Timestamp>
+                    <Value>2021-07-05T06:42:09.478Z</Value>
+                    <Timestamp>2021-07-05T06:42:09.478Z</Timestamp>
                     <Quality>GOOD</Quality>
                 </reportingLastEvaluation>
                 <reportingLastChange>
-                    <Value>2021-06-30T07:06:36.339Z</Value>
-                    <Timestamp>2021-06-30T07:06:36.339Z</Timestamp>
+                    <Value>2021-07-05T06:42:09.478Z</Value>
+                    <Timestamp>2021-07-05T06:42:09.478Z</Timestamp>
                     <Quality>GOOD</Quality>
                 </reportingLastChange>
                 <lastConnection>
-                    <Value>2021-06-30T07:06:11.235Z</Value>
-                    <Timestamp>2021-06-30T07:06:11.236Z</Timestamp>
+                    <Value>2021-07-05T06:42:09.476Z</Value>
+                    <Timestamp>2021-07-05T06:42:09.476Z</Timestamp>
                     <Quality>GOOD</Quality>
                 </lastConnection>
-                <AppConfig>
+                <Configuration>
                     <Value>
                         <Printer.ApplicationInfo
-                         applicationName="Demo2250"
-                         applicationTitle="Demo2250 - UI"
-                         version="1.0.0.2"></Printer.ApplicationInfo>
+                         applicationName="Demo"
+                         applicationTitle="Demo - UI"
+                         version="1.0.0.0"></Printer.ApplicationInfo>
                     </Value>
-                    <Timestamp>2021-06-30T07:06:28.586Z</Timestamp>
-                    <Quality>UNKNOWN</Quality>
-                </AppConfig>
+                    <Timestamp>2021-07-05T06:46:27.185Z</Timestamp>
+                    <Quality>GOOD</Quality>
+                </Configuration>
             </ThingProperties>
         </Thing>
     </Things>
