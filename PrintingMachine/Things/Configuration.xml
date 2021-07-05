@@ -251,7 +251,7 @@
                                         
                                         var ex = Things["GitBackup"].ExportProjectEntities({
                                         	ProjectName: "PrintingMachine" /* STRING */,
-                                        	includeDependents: false /* BOOLEAN */,
+                                        	includeDependents: true /* BOOLEAN */,
                                         	EntitiesToExport: entities /* INFOTABLE */
                                         });
                                         

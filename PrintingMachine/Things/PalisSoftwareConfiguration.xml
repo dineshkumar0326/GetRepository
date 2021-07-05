@@ -331,7 +331,7 @@
                                         <Row>
                                             <code>
                                             <![CDATA[
-                                            logger.info("Welcome");
+                                            logger.warn("warning");
                                             ]]>
                                             </code>
                                         </Row>
@@ -368,18 +368,18 @@
             <ImplementedShapes></ImplementedShapes>
             <ThingProperties>
                 <reportingLastEvaluation>
-                    <Value>2021-07-05T06:42:09.478Z</Value>
-                    <Timestamp>2021-07-05T06:42:09.478Z</Timestamp>
+                    <Value>2021-07-05T06:47:30.572Z</Value>
+                    <Timestamp>2021-07-05T06:47:30.572Z</Timestamp>
                     <Quality>GOOD</Quality>
                 </reportingLastEvaluation>
                 <reportingLastChange>
-                    <Value>2021-07-05T06:42:09.478Z</Value>
-                    <Timestamp>2021-07-05T06:42:09.478Z</Timestamp>
+                    <Value>2021-07-05T06:47:30.572Z</Value>
+                    <Timestamp>2021-07-05T06:47:30.572Z</Timestamp>
                     <Quality>GOOD</Quality>
                 </reportingLastChange>
                 <lastConnection>
-                    <Value>2021-07-05T06:42:09.476Z</Value>
-                    <Timestamp>2021-07-05T06:42:09.476Z</Timestamp>
+                    <Value>2021-07-05T06:47:30.571Z</Value>
+                    <Timestamp>2021-07-05T06:47:30.571Z</Timestamp>
                     <Quality>GOOD</Quality>
                 </lastConnection>
                 <Configuration>
@@ -389,7 +389,7 @@
                          applicationTitle="Demo - UI"
                          version="1.0.0.0"></Printer.ApplicationInfo>
                     </Value>
-                    <Timestamp>2021-07-05T06:46:27.185Z</Timestamp>
+                    <Timestamp>2021-07-05T06:49:11.122Z</Timestamp>
                     <Quality>GOOD</Quality>
                 </Configuration>
             </ThingProperties>
