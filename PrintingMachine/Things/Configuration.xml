@@ -256,7 +256,7 @@
                                         });
                                         
                                         // Result: STRING
-                                        let Result = Things["GitBackup"].Push({
+                                        Things["GitBackup"].Push({
                                         	Message: MessageInfo /* STRING */
                                         });
                                         ]]>

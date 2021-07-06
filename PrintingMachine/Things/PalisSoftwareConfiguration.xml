@@ -368,18 +368,18 @@
             <ImplementedShapes></ImplementedShapes>
             <ThingProperties>
                 <reportingLastEvaluation>
-                    <Value>2021-07-05T06:47:30.572Z</Value>
-                    <Timestamp>2021-07-05T06:47:30.572Z</Timestamp>
+                    <Value>2021-07-05T07:20:04.035Z</Value>
+                    <Timestamp>2021-07-05T07:20:04.035Z</Timestamp>
                     <Quality>GOOD</Quality>
                 </reportingLastEvaluation>
                 <reportingLastChange>
-                    <Value>2021-07-05T06:47:30.572Z</Value>
-                    <Timestamp>2021-07-05T06:47:30.572Z</Timestamp>
+                    <Value>2021-07-05T07:20:04.035Z</Value>
+                    <Timestamp>2021-07-05T07:20:04.035Z</Timestamp>
                     <Quality>GOOD</Quality>
                 </reportingLastChange>
                 <lastConnection>
-                    <Value>2021-07-05T06:47:30.571Z</Value>
-                    <Timestamp>2021-07-05T06:47:30.571Z</Timestamp>
+                    <Value>2021-07-05T07:20:04.029Z</Value>
+                    <Timestamp>2021-07-05T07:20:04.030Z</Timestamp>
                     <Quality>GOOD</Quality>
                 </lastConnection>
                 <Configuration>
@@ -389,7 +389,7 @@
                          applicationTitle="Demo - UI"
                          version="1.0.0.0"></Printer.ApplicationInfo>
                     </Value>
-                    <Timestamp>2021-07-05T06:49:11.122Z</Timestamp>
+                    <Timestamp>2021-07-05T07:20:21.772Z</Timestamp>
                     <Quality>GOOD</Quality>
                 </Configuration>
             </ThingProperties>
